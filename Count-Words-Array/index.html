@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="ip" type="text">
+<button id="but" onclick="countWords()">CountWords</button>
+<script>
+    function countWords(){
+        let text=document.getElementById('ip').value;
+        let i;
+        for (i=0;i<text.length;i++){
+            document.getElementById('but').innerHTML=`Có ${i} ký tự`
+        }
+    }
+</script>
+</body>
+</html>
