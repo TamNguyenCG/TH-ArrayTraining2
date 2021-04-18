@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Chuỗi 1:</h4>
+<input id="ip1">
+<h4>Chuỗi 2:</h4>
+<input id="ip2">
+<hr>
+<button onclick="checkSame()">Check</button><p id="result"></p>
+<script>
+  function checkSame(){
+ let txt1=document.getElementById('ip1').value;
+ let txt2=document.getElementById('ip2').value;
+ if (txt1 == txt2){
+   document.getElementById('result').innerHTML=`Hai chuỗi giống nhau`
+ }else{
+   document.getElementById('result').innerHTML=`Hai chuỗi không giống nhau`
+ }
+ }
+</script>
+</body>
+</html>
