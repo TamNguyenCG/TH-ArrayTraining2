@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h3>Find And Replace "-" -> "_"</h3>
+<input type="text" id="txt">
+<hr>
+<button id="but" onclick="findReplace()">Click to replace</button><p id="rs"></p>
+<body>
+<script>
+    function findReplace() {
+        let ip = document.getElementById('txt').value;
+        let i;
+        let ip2 = ""
+        for (i = 0; i < ip.length; i++) {
+            ip2 = ip.replaceAll('-', '_')
+        }
+        document.getElementById('rs').innerHTML=`<h2>${ip2}</h2>`;
+    }
+</script>
+</body>
+</html>
